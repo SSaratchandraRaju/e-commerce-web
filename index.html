@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce - Premium E-Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">E-Commerce</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html?category=electronics">Electronics</a></li>
+      <li><a href="index.html?category=fashion">Fashion</a></li>
+      <li><a href="index.html?category=home furniture">Furniture</a></li>
+      <li><a href="index.html?category=sports">Sports</a></li>
+      <li><a href="index.html?category=Personal Care">Personal Care</a></li>
+      <li><a href="index.html?category=Kitchen Appliances">Kitchen</a></li>
+    </ul>
+    <div class="cart">
+      <a href="cart/cart.html">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Carousel Section -->
+  <section class="carousel-section">
+    <div class="carousel-wrapper">
+      <div class="carousel-container">
+        <!-- Slide 1 -->
+        <div class="carousel-slide active">
+          <img
+            src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Luxury Shopping" class="carousel-image" />
+          <div class="carousel-overlay">
+            <div class="carousel-content">
+              <h2>Luxury Redefined</h2>
+              <p>Discover our exclusive collection of premium products crafted for the discerning customer. Experience
+                luxury like never before.</p>
+              <a href="#products" class="shop-now-btn">Shop Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+          <img
+            src="https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
+            alt="Elegant Watches" class="carousel-image" />
+          <div class="carousel-overlay">
+            <div class="carousel-content">
+              <h2>Timeless Elegance</h2>
+              <p>Our curated collection of luxury timepieces that combine precision engineering with exquisite
+                craftsmanship.</p>
+              <a href="#watches" class="shop-now-btn">Explore Watches</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+          <img
+            src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2078&q=80"
+            alt="Designer Bags" class="carousel-image" />
+          <div class="carousel-overlay">
+            <div class="carousel-content">
+              <h2>Iconic Accessories</h2>
+              <p>Elevate your style with our selection of designer handbags and accessories that make a statement.</p>
+              <a href="#accessories" class="shop-now-btn">View Collection</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="carousel-slide">
+          <img
+            src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Fine Jewelry" class="carousel-image" />
+          <div class="carousel-overlay">
+            <div class="carousel-content">
+              <h2>Exquisite Jewelry</h2>
+              <p>Handcrafted pieces that embody sophistication and timeless beauty for every occasion.</p>
+              <a href="#jewelry" class="shop-now-btn">Discover Jewelry</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="carousel-slide">
+          <img
+            src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2036&q=80"
+            alt="Luxury Fragrances" class="carousel-image" />
+          <div class="carousel-overlay">
+            <div class="carousel-content">
+              <h2>Signature Scents</h2>
+              <p>Indulge in our exclusive range of luxury fragrances that capture the essence of sophistication.</p>
+              <a href="#fragrances" class="shop-now-btn">Browse Fragrances</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Arrows -->
+      <button class="carousel-arrow prev" aria-label="Previous slide">&#10094;</button>
+      <button class="carousel-arrow next" aria-label="Next slide">&#10095;</button>
+
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button class="indicator active" aria-label="Slide 1"></button>
+        <button class="indicator" aria-label="Slide 2"></button>
+        <button class="indicator" aria-label="Slide 3"></button>
+        <button class="indicator" aria-label="Slide 4"></button>
+        <button class="indicator" aria-label="Slide 5"></button>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="section-header">
+      <h2>Featured Collections</h2>
+      <p>Explore our carefully curated selection of premium products</p>
+    </div>
+    <div id="product-categories"></div>
+  </section>
+
+  <!-- Notification -->
+  <div id="notification" class="notification">
+    <i class="fas fa-check-circle"></i>
+    <span id="notification-text"></span>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <div class="scroll-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2>E-Commerce</h2>
+        <p>Your premier destination for luxury products and exceptional shopping experiences. We curate only the finest
+          items for our distinguished clientele.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+          <a href="https://x.com/"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h2>Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html?category=electronics">Electronics</a></li>
+          <li><a href="index.html?category=fashion">Fashion</a></li>
+          <li><a href="index.html?category=home furniture">Furniture</a></li>
+          <li><a href="index.html?category=Kitchen Appliances">Kitchen</a></li>
+          <li><a href="index.html?category=Personal Care">Personal Care</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h2>Customer Service</h2>
+        <ul class="footer-links">
+          <li><a href="cart/cart.html">Shopping Cart</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#shipping">Shipping Info</a></li>
+          <li><a href="#returns">Returns</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h2>Stay Connected</h2>
+        <p>Subscribe to our newsletter for exclusive offers and latest updates</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <p style="margin-top: 20px; font-size: 0.9rem;">
+          <strong>Contact:</strong><br>
+          Email: support@ecommerce.com<br>
+          Phone: +91 7729823720
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 E-Commerce | Designed with ❤️ by Saratchandra Raju Sarikonda</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="module" src="script.js"></script>
+  <script src="./cart/cart.js" type="module"></script>
+
+
+  <script>
+    // Menu toggle functionality
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    // Scroll to top functionality
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    // Show/hide scroll to top button and navbar scroll effect
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      const scrollTop = document.querySelector('.scroll-top');
+
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+        scrollTop.classList.add('active');
+      } else {
+        navbar.classList.remove('scrolled');
+        scrollTop.classList.remove('active');
+      }
+    });
+
+    // Newsletter form submission
+    document.querySelector('.newsletter-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = this.querySelector('input[type="email"]').value;
+      showNotification('Thank you for subscribing to our newsletter!');
+      this.reset();
+    });
+
+    // Notification system
+    function showNotification(message, type = 'success') {
+      const notification = document.getElementById('notification');
+      const notificationText = document.getElementById('notification-text');
+
+      notificationText.textContent = message;
+      notification.classList.add('show');
+
+      setTimeout(() => {
+        notification.classList.remove('show');
+      }, 3000);
+    }
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.querySelector('.carousel-container');
+      const slides = document.querySelectorAll('.carousel-slide');
+      const prevBtn = document.querySelector('.prev');
+      const nextBtn = document.querySelector('.next');
+      const indicators = document.querySelectorAll('.indicator');
+
+      let currentIndex = 0;
+      const slideCount = slides.length;
+
+      // Initialize carousel
+      function updateCarousel() {
+        carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+        // Update indicators
+        indicators.forEach((indicator, index) => {
+          indicator.classList.toggle('active', index === currentIndex);
+        });
+
+        // Update slides
+        slides.forEach((slide, index) => {
+          slide.classList.toggle('active', index === currentIndex);
+        });
+      }
+
+      // Next slide
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % slideCount;
+        updateCarousel();
+      }
+
+      // Previous slide
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+        updateCarousel();
+      }
+
+      // Auto-advance (optional)
+      let autoSlideInterval = setInterval(nextSlide, 5000);
+
+      // Pause on hover
+      carousel.addEventListener('mouseenter', () => {
+        clearInterval(autoSlideInterval);
+      });
+
+      carousel.addEventListener('mouseleave', () => {
+        autoSlideInterval = setInterval(nextSlide, 5000);
+      });
+
+      // Button events
+      nextBtn.addEventListener('click', nextSlide);
+      prevBtn.addEventListener('click', prevSlide);
+
+      // Indicator events
+      indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+          currentIndex = index;
+          updateCarousel();
+        });
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+          nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+          prevSlide();
+        }
+      });
+
+      // Initialize
+      updateCarousel();
+    });
+  </script>
+
+
+</body>
+
+</html>

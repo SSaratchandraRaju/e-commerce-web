@@ -1,0 +1,482 @@
+[
+  {
+    "category": "Suggested Products",
+    "items": [
+      {
+        "name": "Sofa",
+        "price": 15999,
+        "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Monitor",
+        "price": 12999,
+        "image": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Mobile",
+        "price": 25999,
+        "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Jacket",
+        "price": 2999,
+        "image": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Watch",
+        "price": 8999,
+        "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&h=500&fit=crop"
+      }
+    ]
+  },
+  {
+    "category": "Electronics",
+    "items": [
+      {
+        "name": "iPhone 15 Pro",
+        "price": 134900,
+        "image": "https://images.unsplash.com/photo-1695048133142-1a20484d2569?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Samsung Galaxy S24 Ultra",
+        "price": 129999,
+        "image": "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Sony WH-1000XM5 Headphones",
+        "price": 29990,
+        "image": "https://images.unsplash.com/photo-1583394838336-acd977736f90?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Apple Watch Series 9",
+        "price": 41900,
+        "image": "https://images.unsplash.com/photo-1434493789847-2f02dc6ca35d?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "MacBook Pro 14\" M3",
+        "price": 199900,
+        "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Bose QuietComfort Earbuds",
+        "price": 26990,
+        "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "PlayStation 5 Console",
+        "price": 54990,
+        "image": "https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Xbox Series X",
+        "price": 52990,
+        "image": "https://images.unsplash.com/photo-1621259182978-fbf93132d53d?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "DJI Mini 3 Pro Drone",
+        "price": 79900,
+        "image": "https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "GoPro HERO12 Black",
+        "price": 44500,
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Amazon Echo Dot (5th Gen)",
+        "price": 4499,
+        "image": "https://images.unsplash.com/photo-1518444065439-e933c06ce9cd?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Samsung 55\" QLED TV",
+        "price": 89999,
+        "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "OnePlus 12",
+        "price": 64999,
+        "image": "https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Kindle Paperwhite",
+        "price": 14999,
+        "image": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Logitech MX Master 3S Mouse",
+        "price": 8995,
+        "image": "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&h=500&fit=crop"
+      }
+    ]
+  },
+  {
+    "category": "Fashion",
+    "items": [
+      {
+        "name": "Levi's 511 Slim Jeans",
+        "price": 3999,
+        "image": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Nike Air Force 1",
+        "price": 7995,
+        "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Adidas Originals Hoodie",
+        "price": 4999,
+        "image": "https://images.unsplash.com/photo-1556821840-3a9fbc86339e?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Ray-Ban Aviator Sunglasses",
+        "price": 12999,
+        "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "The North Face Jacket",
+        "price": 12999,
+        "image": "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Fossil Gen 6 Smartwatch",
+        "price": 24995,
+        "image": "https://images.unsplash.com/photo-1558126319-c9feecbf57ee?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Zara Blazer",
+        "price": 6999,
+        "image": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "H&M Cotton Dress",
+        "price": 1999,
+        "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Polo Ralph Lauren Shirt",
+        "price": 8999,
+        "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Dr. Martens Boots",
+        "price": 16999,
+        "image": "https://images.unsplash.com/photo-1560769629-975ec94e6a86?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Tommy Hilfiger Sweater",
+        "price": 5999,
+        "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Under Armour T-Shirt",
+        "price": 1999,
+        "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Lululemon Leggings",
+        "price": 8999,
+        "image": "https://images.unsplash.com/photo-1506629905607-d9a9b7971c8b?w=500&h=500&fit=crop"
+      }
+    ]
+  },
+  {
+    "category": "Home Furniture",
+    "items": [
+      {
+        "name": "Wooden Dining Table",
+        "price": 35999,
+        "image": "https://images.unsplash.com/photo-1549497538-303791108f95?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "L-Shaped Corner Sofa",
+        "price": 45999,
+        "image": "https://images.unsplash.com/photo-1558898434-2207d5b08d3a?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Queen Size Bed Frame",
+        "price": 28999,
+        "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Office Chair Ergonomic",
+        "price": 15999,
+        "image": "https://images.unsplash.com/photo-1541558869434-2840d308329a?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "6-Door Wardrobe",
+        "price": 32999,
+        "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Coffee Table Glass Top",
+        "price": 12999,
+        "image": "https://images.unsplash.com/photo-1506439773649-6e0eb8cfb237?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "TV Unit with Storage",
+        "price": 18999,
+        "image": "https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Study Table with Drawers",
+        "price": 14999,
+        "image": "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Bookshelf 5-Tier",
+        "price": 8999,
+        "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Recliner Chair",
+        "price": 25999,
+        "image": "https://images.unsplash.com/photo-1583847268964-b28dc8f51f92?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Side Table Nightstand",
+        "price": 6999,
+        "image": "https://images.unsplash.com/photo-1562114808-4c9dcdee80c9?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Shoe Rack 4-Tier",
+        "price": 3999,
+        "image": "https://images.unsplash.com/photo-1565538810643-b5bdb714032a?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Bean Bag Chair",
+        "price": 4999,
+        "image": "https://images.unsplash.com/photo-1592078615290-033ee584e267?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Mirror Full Length",
+        "price": 7999,
+        "image": "https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?w=500&h=500&fit=crop"
+      }
+    ]
+  },
+  {
+    "category": "Sports",
+    "items": [
+      {
+        "name": "Gym Treadmill Electric",
+        "price": 89999,
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Dumbbells Set 20kg",
+        "price": 8999,
+        "image": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Yoga Mat Premium",
+        "price": 1999,
+        "image": "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Cricket Bat Kashmir Willow",
+        "price": 3999,
+        "image": "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Football Official Size",
+        "price": 1999,
+        "image": "https://images.unsplash.com/photo-1486286701208-1d58e9338013?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Badminton Racket Set",
+        "price": 4999,
+        "image": "https://images.unsplash.com/photo-1544717684-582285016671?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Basketball Spalding",
+        "price": 2999,
+        "image": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Tennis Racket Professional",
+        "price": 8999,
+        "image": "https://images.unsplash.com/photo-1579801655765-a5b839794d09?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Resistance Bands Set",
+        "price": 1499,
+        "image": "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Home Gym Setup",
+        "price": 45999,
+        "image": "https://images.unsplash.com/photo-1576678927484-cc907957088c?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Cycling Helmet",
+        "price": 2999,
+        "image": "https://images.unsplash.com/photo-1544966503-7adce2b1d0e3?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Swimming Goggles",
+        "price": 999,
+        "image": "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Running Shoes Nike",
+        "price": 7999,
+        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Protein Shaker Bottle",
+        "price": 799,
+        "image": "https://images.unsplash.com/photo-1594737625785-a6cbdabd333c?w=500&h=500&fit=crop"
+      }
+    ]
+  },
+  {
+    "category": "Personal Care",
+    "items": [
+      {
+        "name": "Philips Electric Shaver",
+        "price": 8999,
+        "image": "https://images.unsplash.com/photo-1499324085171-d4dffe6970ec?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Hair Dryer Professional",
+        "price": 3999,
+        "image": "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Electric Toothbrush Oral-B",
+        "price": 4999,
+        "image": "https://images.unsplash.com/photo-1607613009820-a29f7bb81c04?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Face Wash Cleanser Set",
+        "price": 1499,
+        "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Hair Straightener Ceramic",
+        "price": 2999,
+        "image": "https://images.unsplash.com/photo-1596704017256-17932c549f3e?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Perfume Set Luxury",
+        "price": 6999,
+        "image": "https://images.unsplash.com/photo-1541643600914-78b084683601?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Moisturizer Anti-Aging",
+        "price": 2499,
+        "image": "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Trimmer Beard Grooming",
+        "price": 3499,
+        "image": "https://images.unsplash.com/photo-1596703264020-829b04e35a73?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Sunscreen SPF 50",
+        "price": 899,
+        "image": "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Body Lotion Vitamin E",
+        "price": 1299,
+        "image": "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Shampoo & Conditioner Set",
+        "price": 1999,
+        "image": "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Face Mask Skincare Kit",
+        "price": 1799,
+        "image": "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Essential Oils Aromatherapy",
+        "price": 2999,
+        "image": "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Makeup Kit Professional",
+        "price": 8999,
+        "image": "https://images.unsplash.com/photo-1625772452859-1c03d5bf1137?w=500&h=500&fit=crop"
+      }
+    ]
+  },
+  {
+    "category": "Kitchen Appliances",
+    "items": [
+      {
+        "name": "Microwave Oven 25L",
+        "price": 15999,
+        "image": "https://images.unsplash.com/photo-1574269909862-7e1d70bb8078?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Refrigerator Double Door",
+        "price": 45999,
+        "image": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Mixer Grinder 750W",
+        "price": 6999,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Air Fryer Digital",
+        "price": 8999,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Induction Cooktop",
+        "price": 4999,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Electric Kettle 1.5L",
+        "price": 2499,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Pressure Cooker 5L",
+        "price": 3999,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Blender High Speed",
+        "price": 5999,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Rice Cooker 1.8L",
+        "price": 3499,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Coffee Maker Automatic",
+        "price": 12999,
+        "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Toaster 4-Slice",
+        "price": 4999,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Food Processor 1000W",
+        "price": 9999,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Juicer Cold Press",
+        "price": 18999,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      },
+      {
+        "name": "Dishwasher Compact",
+        "price": 35999,
+        "image": "https://images.unsplash.com/photo-1581093450021-4a7360e9a7a4?w=500&h=500&fit=crop"
+      }
+    ]
+  }
+]

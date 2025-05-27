@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shopping Cart - E-Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../cart/cart.css" />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">E-Commerce</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../index.html?category=electronics">Electronics</a></li>
+      <li><a href="../index.html?category=fashion">Fashion</a></li>
+      <li><a href="../index.html?category=home furniture">Furniture</a></li>
+      <li><a href="../index.html?category=sports">Sports</a></li>
+      <li><a href="../index.html?category=Personal Care">Personal Care</a></li>
+      <li><a href="../index.html?category=Kitchen Appliances">Kitchen Appliances</a></li>
+    </ul>
+    <div class="cart">
+      <a href="cart.html">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    <div class="cart-container">
+      <h3><i class="fas fa-shopping-cart" style="margin-right: 15px;"></i>Shopping Cart</h3>
+
+      <ul id="cart-items"></ul>
+
+      <div class="cart-total">
+        <p><b>Total:</b> <span id="cart-total">0</span></p>
+      </div>
+
+      <div class="cart-actions">
+        <button class="clear-cart-btn" onclick="clearCart()">
+          <i class="fas fa-trash-alt" style="margin-right: 8px;"></i>Clear Cart
+        </button>
+        <button class="checkout-btn" id="checkout-btn" onclick="checkout()">
+          <i class="fas fa-credit-card" style="margin-right: 8px;"></i>Checkout
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Notification -->
+  <div id="notification" class="notification">
+    <i class="fas fa-check-circle"></i>
+    <span id="notification-text"></span>
+  </div>
+
+  <!-- Scroll to Top -->
+  <div class="scroll-top" onclick="scrollToTop()">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2>E-Commerce</h2>
+        <p>Your premier destination for luxury products and exceptional shopping experiences. We curate only the finest
+          items for our distinguished clientele.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h2>Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html?category=electronics">Electronics</a></li>
+          <li><a href="../index.html?category=fashion">Fashion</a></li>
+          <li><a href="../index.html?category=home furniture">Furniture</a></li>
+          <li><a href="../index.html?category=Kitchen Appliances">Kitchen</a></li>
+          <li><a href="../index.html?category=Personal Care">Personal Care</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h2>Customer Service</h2>
+        <ul class="footer-links">
+          <li><a href="cart.html">Shopping Cart</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#shipping">Shipping Info</a></li>
+          <li><a href="#returns">Returns</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h2>Stay Connected</h2>
+        <p>Subscribe to our newsletter for exclusive offers and latest updates</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+        <p style="margin-top: 20px; font-size: 0.9rem;">
+          <strong>Contact:</strong><br>
+          Email: support@ecommerce.com<br>
+          Phone: +91 7729823720
+        </p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 E-Commerce | Designed with ❤️ by Saratchandra Raju Sarikonda</p>
+    </div>
+  </footer>
+
+  <script type="module" src="cart.js"></script>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    window.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      const scrollTop = document.querySelector('.scroll-top');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+        scrollTop.classList.add('active');
+      } else {
+        navbar.classList.remove('scrolled');
+        scrollTop.classList.remove('active');
+      }
+    });
+
+    document.querySelector('.newsletter-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      showNotification('Thank you for subscribing to our newsletter!');
+      this.reset();
+    });
+
+    function showNotification(message, type = 'success') {
+      const notification = document.getElementById('notification');
+      const notificationText = document.getElementById('notification-text');
+      notificationText.textContent = message;
+      notification.classList.add('show');
+      setTimeout(() => notification.classList.remove('show'), 3000);
+    }
+
+    function clearCart() {
+      const cartItems = document.getElementById('cart-items');
+      const cartTotal = document.getElementById('cart-total');
+      const cartCount = document.getElementById('cart-count');
+      cartItems.innerHTML = '';
+      cartTotal.textContent = '0';
+      cartCount.textContent = '0';
+      document.getElementById('empty-cart').style.display = 'block';
+      showNotification('Cart cleared successfully!');
+    }
+
+    function checkout() {
+      const total = document.getElementById('cart-total').textContent;
+      if (total === '0') {
+        showNotification('Your cart is empty!', 'error');
+      } else {
+        showNotification('Proceeding to checkout...');
+        // Here you would typically redirect to a checkout page or process payment
+      }
+    }
+
+    // Dummy cart render logic (for illustration)
+    window.addEventListener('DOMContentLoaded', () => {
+      const items = []; // Replace with your dynamic cart logic
+      const cartItems = document.getElementById('cart-items');
+      const emptyCart = document.getElementById('empty-cart');
+
+      if (items.length === 0) {
+        emptyCart.style.display = 'block';
+      } else {
+        emptyCart.style.display = 'none';
+        items.forEach(item => {
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <div class="cart-item-info">${item.name}</div>
+            <div class="cart-item-price">₹${item.price}</div>
+            <button class="remove-item" onclick="removeItem('${item.id}')">
+              <i class="fas fa-times"></i> Remove
+            </button>`;
+          cartItems.appendChild(li);
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
